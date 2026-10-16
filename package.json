@@ -1,0 +1,19 @@
+{
+  "name": "kmch-queue-system",
+  "version": "1.0.0",
+  "description": "kmch-queue-system/ ├── backend/                  # ส่วนของ Node.js + Express + Socket.io + SQLite │   ├── node_modules/ │   ├── kmch_queue.db         # ไฟล์ฐานข้อมูล SQLite (ระบบจะสร้างให้อัตโนมัติ) │   ├── package.json │   └── server.js             # ไฟล์รันเซิร์ฟเวอร์หลัก │ ├── frontend/                 # ส่วนของ Next.js (App Router) + Tailwind CSS │   ├── app/                  # โครงสร้างหน้าจอตาม Next.js App Router │   │   ├── display/ │   │   │   └── page.tsx      # 3. หน้าจอแสดงคิว (Public Display) │   │   ├── doctor/ │   │   │   └── page.tsx      # 2. หน้าจอการทำงานของแพทย์ │   │   ├── staff/ │   │   │   └── page.tsx      # 1. หน้าจอการทำงานของเจ้าหน้าที่ │   │   ├── layout.tsx │   │   └── page.tsx          # หน้าแรก (Home) │   ├── lib/ │   │   └── socket.ts         # ไฟล์ตั้งค่า Socket.io Client │   ├── public/               # ไฟล์รูปภาพหรือเสียง (ถ้ามี) │   ├── package.json │   ├── tailwind.config.js │   └── tsconfig.json │ └── README.md                 # รายละเอียดโปรเจกต์",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "socket.io": "^4.8.4",
+    "sqlite3": "^6.0.1"
+  }
+}
